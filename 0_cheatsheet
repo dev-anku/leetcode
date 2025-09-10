@@ -24,6 +24,7 @@ st.erase(5);
 
 unordered_map<int,int> mp;
 mp[5] = 10;
+mp.find(5);
 mp.count(5);      // check existence
 mp.erase(5);
 
