@@ -30,7 +30,7 @@ mp.erase(5);
 
 queue<int> q;
 q.push(1);
-int front = q.front(); q.pop();
+int front = q.front(); int back = q.back(); q.pop();
 
 stack<int> s;
 s.push(2);
