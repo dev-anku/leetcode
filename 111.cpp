@@ -37,5 +37,7 @@ public:
       }
       depth++;
     }
+
+    return depth;
   }
 };
