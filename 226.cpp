@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <utility>
 using namespace std;
 
 struct TreeNode {
@@ -21,9 +22,7 @@ public:
     invert(node->left);
     invert(node->right);
 
-    TreeNode *temp = node->left ? node->left : NULL;
-    node->left = node->right ? node->right : NULL;
-    node->right = temp;
+    swap(node->left, node->right);
   }
 
   TreeNode *invertTree(TreeNode *root) {
